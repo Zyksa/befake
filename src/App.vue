@@ -32,7 +32,6 @@
 console.log("VITE PROXY URL", import.meta.env.VITE_PROXY_URL);
 import errorToast from "./components/ui/errorToast.vue";
 import NavbarVue from "./components/layout/Navbar.vue";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 export default {
   components: {
     errorToast,
@@ -42,7 +41,6 @@ export default {
 </script>
 
 <template>
-  <SpeedInsights/>
   <Transition name="bounce">
     <errorToast
       v-if="this.$store.state.error.show"
