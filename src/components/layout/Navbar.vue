@@ -67,23 +67,7 @@ export default {
               class="w-12 rounded-full object-cover mr-2"
               alt="logo" />
             <span class="text-3xl font-bold">BeFake</span>
-          </router-link>
-        </div>
-        <div class="hidden md:flex items-center">
-          <a
-            href="https://github.com/rvaidun/befake"
-            target="_blank"
-            class="cursor-pointer text-blue-500 sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold githublogo">
-          </a>
-          <a
-            class="cursor-pointer text-red-500 sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-            href="https://ko-fi.com/rahulvaidun"
-            target="_blank">
-            Donate
-          </a>
-
-          <react-to-all v-if="this.$store.state.loggedIn" />
-
+          </router-link>    
           <router-link
             class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
             to="/map"
@@ -92,15 +76,9 @@ export default {
           </router-link>
           <router-link
             class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
-            to="/about"
-            @click="() => (showNav = false)">
-            About
-          </router-link>
-          <router-link
-            class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
             to="/memories"
             @click="() => (showNav = false)">
-            memories
+            Memories
           </router-link>
           <a
             class="cursor-pointer text-white sm:py-2 py-[0.6px] sm:px-3 rounded-md font-bold"
